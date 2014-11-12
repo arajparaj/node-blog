@@ -1,4 +1,4 @@
 node-blog
 =========
 
-Basic node application in node.js
+Basic node application using node+express+mongoDB
