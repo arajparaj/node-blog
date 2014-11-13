@@ -1,5 +1,6 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+html
+  head
+    title #{title}
+  body
+    - product = typeof(articles) != 'undefined' ? articles : { }
+    h1 #{product.title}
