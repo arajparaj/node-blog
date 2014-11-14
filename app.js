@@ -28,15 +28,11 @@ if ('production' == app.get('env')) {
 
 var articleProvider= new ArticleProvider();
 
+
 // Routes
 app.get('/', function(req,res){
   articleProvider.findAll(function(error, docs){
-    res.render('index.jade', {
-      locals: {
-        title: 'Blog',
-        articles: docs
-      }
-    });
+    res.render('index',{ title: 'Blog', articles: docs });
     console.log(docs);
   })
 });

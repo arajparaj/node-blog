@@ -1,6 +1,8 @@
-html
-  head
-    title #{title}
-  body
-    - product = typeof(articles) != 'undefined' ? articles : { }
-    h1 #{product.title}
+h1= title
+#articles
+    - each article in articles
+      div.article
+        div.created_at= article.created_at
+        div.title 
+            a(href="/blog/"+article._id)!= article.title
+        div.body= article.body
