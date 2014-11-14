@@ -1,9 +1,10 @@
 include layout
 h1=title
+a(href="/blog/new")!="create a new post"
 #articles
     - each article in articles
       div.article
         div.created_at= article.created_at
         div.title 
-            a(href="/blog/"+article._id)!= article.title
+            a(href="/blog/"+article._id.toHexString())!= article.title
         div.body= article.body
