@@ -33,8 +33,12 @@ var articleProvider= new ArticleProvider();
 app.get('/', function(req,res){
   articleProvider.findAll(function(error, docs){
     res.render('index',{ title: 'Blog', articles: docs });
-    console.log(docs);
+    //console.log(docs);
   })
+})
+
+app.get('/*.css', function(req,res){
+  res.render(req.params[0] + '.css.sass', { layout: false });
 });
 
 app.listen(3000);

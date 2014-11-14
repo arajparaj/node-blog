@@ -45,7 +45,10 @@ ArticleProvider.prototype.save = function(articles, callback) {
 new ArticleProvider().save([
   {title: 'Post one', body: 'Body one', comments:[{author:'Bob', comment:'I love it'}, {author:'Dave', comment:'This is rubbish!'}]},
   {title: 'Post two', body: 'Body two'},
-  {title: 'Post three', body: 'Body three'}
+  {title: 'Post three', body: 'Body three'},
+  {title: 'demo post', body: 'demo Body'},
+  {title: 'sample post', body: 'nobody'},
+  {title: 'POST', body: 'Body'}
 ], function(error, articles){});
 
 exports.ArticleProvider = ArticleProvider;
