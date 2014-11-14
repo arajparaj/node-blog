@@ -8,18 +8,23 @@ body {
 h1,
 h2 {
   margin: 0;
-  font-size: 22px;
+  font-size: 25px;
   color: #343434;
 }
 h1 {
   text-shadow: 1px 2px 2px #ddd;
-  font-size: 60px;
+  font-size: 80px;
+}
+#new {
+  text-align: center;
+  font-size: 30px;
 }
 #articles {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  width: 320px;
+  margin-bottom: 30px;
+  width: 1000px;
 }
 #articles .article {
   margin: 20px;
@@ -29,25 +34,58 @@ h1 {
 }
 #articles .article .title {
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
   background-color: #eee;
+  font-size: 30px;
 }
 #articles .article .body {
   background-color: #ffa;
+  font-size: 20px;
 }
 .article .created_at {
   display: none;
 }
+.article .title {
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #eee;
+  font-size: 80px;
+  padding: 20px;
+}
+.article .body {
+  background-color: #ffa;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.article .person {
+  background-color: #aba;
+  font-size: 20px;
+}
+.article .comment {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.article span {
+  font-size: 15px;
+}
 .article input[type =text] {
   width: 490px;
-  margin-left: 16px;
+  margin-left: 20px;
 }
 .article input[type =button],
 .article input[type =submit] {
-  text-align: left;
-  margin-left: 440px;
+  margin-top: 10px;
+  text-align: center;
 }
 .article textarea {
+  margin-top: 15px;
   width: 490px;
   height: 90px;
+}
+#newtitle {
+  font-size: 20px;
+  padding: 10px;
+}
+#newbody {
+  font-size: 20px;
 }

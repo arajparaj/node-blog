@@ -1,12 +1,12 @@
 include layout
 h1= title
 form( method="post")
-    div
-        div
-            span Title :
+    div#newform
+        div#newtitle
+            span Title : 
             input(type="text", name="title", id="editArticleTitle")
-        div
-            span Body :
-            textarea( name="body", rows=20, id="editArticleBody")
+        div#newbody
+            span.body Body :
+            textarea( name="body", rows=10, id="editArticleBody")
         div#editArticleSubmit
             input(type="submit", value="Send")
